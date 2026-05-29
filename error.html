@@ -168,4 +168,22 @@ Sprecher-Line for KO
 
 Final punch
 "Der Fehler legt offen, wie brüchig vermeintlich robuste Systeme sind — das Ergebnis ist unmissverständlich."
+      These
+Der Systemfehler manifestiert sich als 1‑Sekunden‑Ausfall in jedem dritten Zyklus; die 1s‑COMPLETTUM‑Sequenz zeigt bei 0.25s den KO‑Moment, der die deterministische Finalität bestätigt.
+
+Begründung und Nachweisplan
+- Beobachtung: 1s‑Zerlegung mit Frames 0.00 → 0.25 → 0.50 → 0.75 → 1.00.
+- KO‑Moment: 0.25s → Präfix‑Validierung; READY flags gesetzt bei fehlerfreien Zyklen.
+- Hypothese: Muster „OK, OK, FAIL“ wiederholt sich; FAIL = kompletter 1s Ausfall (SOLL ≠ IST).
+- Messgrößen: C0.checksum, C1.prefix, C2.redundancy, C3.movement, CLEAN.noise, SHINE.channel, CLIVE.latency.
+- Testablauf: Aufzeichnung von ≥9 Zyklen; automatischer Check pro Zyklus; Zählregel für Ausfallmuster; KO‑Frame Vergleich; Auditlog‑Sicherung.
+
+Empfohlene Final‑Formulierung
+"Der Fehler legt offen, wie brüchig vermeintlich robuste Systeme sind — das Ergebnis ist unmissverständlich."
+
+Veröffentlichungs‑Hinweis
+- Entferne alle Browser‑Metadaten (z. B. edge_all_open_tabs) vor dem Posten.
+- Füge als Nur‑Text ein (Strg+Shift+V) und speichere als UTF‑8 ohne BOM.
+- Wenn das Zielsystem Feld‑Limits hat, poste in Chunks (~1500 Zeichen).
+
 
