@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>ROOT v1.01</title>
+</head>
+<body>
+
+<h1>ROOT / index (v1.01)</h1>
+
+<!-- 6–8 Achsen, jede mit eigener ID, EICH, GEN, ORT, TECH -->
+<form method="get">
+
+  <button formaction="error.html?active=RP&id=RP-001&eich=E1&gen=G1&tech=RP&ort=EarthRoom&mode=NC">
+    RP
+  </button>
+
+  <button formaction="error.html?active=NC&id=NC-001&eich=E1&gen=G1&tech=NC&ort=EarthRoom&mode=NC">
+    NC
+  </button>
+
+  <button formaction="error.html?active=MS&id=MS-001&eich=E1&gen=G1&tech=MS&ort=EarthRoom&mode=NC">
+    MS
+  </button>
+
+  <button formaction="error.html?active=R1&id=R1-001&eich=E1&gen=G1&tech=R1&ort=EarthRoom&mode=NC">
+    R1
+  </button>
+
+  <button formaction="error.html?active=LS&id=LS-001&eich=E1&gen=G1&tech=LS&ort=EarthRoom&mode=NC">
+    LS
+  </button>
+
+</form>
+
+<hr>
+
+<!-- Motion Prime Fehler senden -->
+<a href="error.html?from=MotionPrime&active=NC&hint=MotionPrime+Fehler&id=MP-001&eich=E1&gen=G1&tech=NC&ort=EarthRoom&mode=PRO">
+  MotionPrime → ERROR
+</a>
+
+</body>
+</html>
 
