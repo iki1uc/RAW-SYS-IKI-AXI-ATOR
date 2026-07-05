@@ -1,97 +1,63 @@
-neverending useless ~
-neverrending useless ~
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ERROR :: WATSON MONITOR</title>
 
-[ 1.000 s COMPLETTUM FINAL ]
-Watson: GLOBAL SYNC → read all cubes → validate prefixes → prepare commit
+<style>
+  body {
+    background:#000;
+    color:#0f0;
+    font-family:monospace;
+    padding:20px;
+  }
+  .cube {
+    border:1px solid #0f0;
+    padding:10px;
+    margin:10px;
+    width:260px;
+    display:inline-block;
+    animation:pulse 1.2s infinite;
+  }
+  @keyframes pulse {
+    0% { opacity:0.4; }
+    50% { opacity:1; }
+    100% { opacity:0.4; }
+  }
+  .title {
+    color:#0ff;
+    font-size:20px;
+    margin-bottom:10px;
+  }
+</style>
 
-CUBE-0 FUNDAMENT    : ● GRÜN  ● KOMPLETT  → micro-stabilize → checksum → lock
-CUBE-1 FORM         : ● GRÜN  ● KOMPLETT  → shape sample → prefix match → ready
-CUBE-2 SCHUTZ (Dual): ● GRÜN  ● KOMPLETT  → counterforce tune → redundancy mirror
-CUBE-3 BEWEGUNG     : ● GRÜN  ○ neutral   → micro-impulse or idle → align with LIVE
-CUBE-CLEAN KLARHEIT : ● GRÜN  ● KOMPLETT  → filter pipeline → transparency flag
-CUBE-SHINE SICHTBAR : ● GRÜN  ● KOMPLETT  → broadcast plan → visibility lock
-CUBE-LIVE ECHTZEIT  : ● GRÜN  ● KOMPLETT  → heartbeat → time-align → master pulse
+<script>
+const cubes = [
+  {name:"CUBE-0 FUNDAMENT", status:"GRÜN", info:"checksum OK"},
+  {name:"CUBE-1 FORM", status:"GRÜN", info:"prefix MATCH"},
+  {name:"CUBE-2 SCHUTZ", status:"GRÜN", info:"redundancy queued"},
+  {name:"CUBE-3 BEWEGUNG", status:"neutral", info:"idle | micro-impulse-ready"},
+  {name:"CLEAN KLARHEIT", status:"GRÜN", info:"noise low"},
+  {name:"SHINE SICHTBAR", status:"GRÜN", info:"channel open"},
+  {name:"LIVE ECHTZEIT", status:"GRÜN", info:"latency <5ms"}
+];
 
-Parallel Microtasks (nonblocking): telemetry snapshots; prefix hashing; audit append; motion micro-sims; visibility cache.
+window.onload = () => {
+  const out = document.getElementById("out");
+  cubes.forEach(c=>{
+    const div = document.createElement("div");
+    div.className = "cube";
+    div.innerHTML = `<div class="title">${c.name}</div>
+                     Status: ${c.status}<br>
+                     Info: ${c.info}`;
+    out.appendChild(div);
+  });
+};
+</script>
+</head>
 
-End (1.000 s): Watson FINAL_VERIFY → Commit OK → (optional) HEADBANG = MASTER_PULSE
-
-[ 0.250 s KO REVEAL ] — Watson sammelt Microreports → Präfix-Validierung startet
-
-Medium 3D Block Scale 2 Operation
-  Geometry:
-    _________
-   /  C0    /|
-  /_______ / |
-  |  C2  | C1|
-  |      |   |
-  | Cclean   |
-  |__________|
-  State summary:
-    C0 micro-adjust fundament → checksum = OK
-    C1 prefix-abgleich → MATCH
-    C2 counterforce tune (dual) → redundancy mirror queued
-    C3 neutral filter → idle | micro-impulse ready
-    CLEAN filter stage 1 → noise < threshold
-    SHINE broadcast plan → ready
-    LIVE heartbeat → aligned
-  Vectors S2: medium length; aggregate → C0 → C1
-
-Large 3D Shell Scale 3 System
-  Geometry:
-    ___________________
-   /       C0        /|
-  /_________________/ |
-  |   C2   C1   C3  | |
-  |                 | |
-  |   CLEAN  SHINE  | +
-  |_________________|/
-  State summary:
-    C0 →→→→→ C1 (systemic thrust) — high
-    C2 ←←← C0 (counterbalance) — stable
-    C3 →→ movement band — neutral micro-drive aligned with LIVE
-    Cclean →→→→→ global info mesh — filter pass OK
-    Cshine →→→→ broadcast layer — channel open
-    Clive ↑↑↑↑↑ time sync vector — dominant, low jitter
-  Vectors S3: long, coherent; w3 increased sharply at 0.25
-
-Local context:
-  C-2 SCHUTZ ←→ (Dual)  — stabilizing counterforce
-  C-3 BEWEGUNG →→ (neutral) — micro-impulse if active
-  C-LIVE strongest vector; latency <5ms
-
-KO Result:
-  - Präfix-Konflikte gelöst → READY flags on C0,C1,C2,CLEAN,SHINE,LIVE
-  - Visual: strong short pulse; audio tick
-  - Data snapshot: {C0:checksum=OK, C1:prefix=MATCH, C2:redundancy=queued, C3:movement=idle|ready, CLEAN:noise=low, SHINE:channel=open, CLIVE:latency=<5ms}
-
-4D Projection S axis vertical
-S=3  [Large System Shell]   ← global vectors dominant
-|
-[interpolation layer]       ← vector amplification and coherence
-|
-S=2  [Medium Block]         ← regional aggregation and prefix merging
-|
-[interpolation layer]       ← vector merging / prefix validation
-|
-S=1  [Small Grid]           ← local detail, noise filtered
-
-KO Result visible to viewer
-- Präfix-Konflikte gelöst → READY flags set on C0, C1, C2, CLEAN, SHINE, LIVE
-- Visual: strong short pulse; all Cubes show READY; audio tick
-- Data snapshot to display:
-  { C0: checksum=OK,
-    C1: prefix=MATCH,
-    C2: redundancy=queued,
-    C3: movement=idle|micro-impulse-ready,
-    CLEAN: noise=low,
-    SHINE: channel=open,
-    CLIVE: latency=<5ms }
-
-Sprecher-Line for KO
-"Hier schlägt die Wahrheit ein — Präfixkonflikte sind gelöst; System ist sichtbar final. Die Daten sprechen: C0 checksum OK, C1 prefix MATCH, C2 redundancy queued, CLIVE low latency — READY."
-
-Final punch
-"Der Fehler legt offen, wie brüchig vermeintlich robuste Systeme sind — das Ergebnis ist unmissverständlich."
-      x HTML - X final - x² Radar - x³ Navi = seeu  all4all https://sourceforge.net/projects/seeu/files/seeu.html/download
-      https://sourceforge.net/projects/timelive/
+<body>
+<h2>WATSON :: ERROR MONITOR</h2>
+<div id="out"></div>
+</body>
+</html>
