@@ -1,169 +1,61 @@
-  
-Ja — dein „grundsystem1.0“ README sollte ECO‑System, Verwaltung, Öko‑System, Straßen‑/Weltigkeitsbildung und KAISER‑2‑/GTA‑6‑Modus als reine Datenlage darstellen.  
-Ich gebe dir jetzt ein vollständiges, korrektes, RAW‑neutrales, ECO‑kompatibles, Verwaltungs‑fähiges, Weltigkeits‑darstellendes README, das nur Datenlage enthält — ohne Engine, ohne Logik, ohne Interpretation.
+# RAW‑SYS‑IKI‑AXI‑ATOR  
+Achsen‑System · RAW‑Ebene · Dispatcher · Engine‑Routing
 
-🌍 README.md — GRUNDSYSTEM 1.0 — ECO / Verwaltung / Weltigkeit (RAW‑Datenlage)
-Neutraler ECO‑Kern • Verwaltungs‑Raster • Öko‑System • Weltigkeits‑Straßenmodell • KAISER‑2 / GTA‑6‑Modus (Datenlage)
-🟦 1. Identität des Moduls
-GRUNDSYSTEM 1.0 ist ein neutraler ECO‑Kern, der:
+Dieses Repository bildet die **RAW‑Ebene** des gesamten 3TH‑Achsen‑Systems ab.  
+Es dient als **Achsen‑Dispatcher**, der Achsen‑IDs, Gruppen, Depth‑Werte und Engine‑Modi an die Fehler‑/Analyse‑Module weiterleitet.
 
-ökologische Daten hält
+---
 
-Verwaltungs‑Raster bereitstellt
+## 🎯 Zweck des Systems
 
-Weltigkeits‑Straßenmodelle abbildet
+RAW‑SYS‑IKI‑AXI‑ATOR ist die **erste operative Ebene** nach der ROOT‑Achsen‑DNA (Α64‑Achsenfamilie).  
+Es übernimmt:
 
-KAISER‑2‑Modus (strategisch)
+- Achsen‑Routing  
+- Achsen‑Identifikation  
+- Achsen‑Parameter‑Dispatch  
+- Fehler‑Weiterleitung  
+- RAW‑Modus‑Analyse  
+- Übergabe an QUAD / 3TH
 
-GTA‑6‑Modus (welt‑offen, sandbox)
+---
 
-Alles ist reine Datenlage. Keine Engine. Keine Logik. Keine Berechnung.
+## 🧬 Achsen‑DNA (Basis)
 
-🟦 2. ECO‑System (Datenlage)
-Das ECO‑System besteht aus:
+Die Achsen‑DNA stammt aus:
 
-ECO‑Zonen (A–F)
+- Α64‑Achsenfamilie.html (ROOT)
+- OCTA.core.json
+- QUAD.core.json
+- 3TH.core.json
 
-ECO‑Räumen (12‑Raum)
+Diese definieren:
 
-ECO‑Achsen (4‑Band)
+- **primary**: X, Y, Z  
+- **secondary**: T, S  
+- **motion**: MOVE, STATE, FLOW  
+- **tri‑core**: alpha, beta, gamma  
 
-ECO‑Werte (neutral, 0‑Last)
+Jede Achse besitzt:
 
-ECO‑Flüsse (nicht berechnend)
+- Slot (1–64)  
+- Gruppe  
+- Depth‑Wert  
+- Engine‑Modus  
+- ID‑Code  
 
-ECO ist rein darstellend.  
-Keine Ökologie‑Simulation. Keine Umweltlogik.
+---
 
-🟦 3. Verwaltungs‑System (Datenlage)
-Das Verwaltungs‑Raster enthält:
+## ⚙️ Funktionsweise
 
-Verwaltungs‑Zonen
+Die Datei **index.html** erzeugt Buttons für jede Achse.  
+Beim Klick wird die Achse mit Parametern an `error.html` gesendet:
 
-Verwaltungs‑Straßen
+- `axis=` Achsenname  
+- `id=` Achsen‑ID  
+- `group=` Achsengruppe  
+- `depth=` Engine‑Tiefe  
+- `mode=` RAW oder 3TH  
 
-Verwaltungs‑Cluster
+Beispiel:
 
-Verwaltungs‑Marker
-
-Alles ist statisch, neutral, nicht ausführend.
-
-🟦 4. Öko‑System (Datenlage)
-Das Öko‑System bildet:
-
-Räume
-
-Flächen
-
-Zonen
-
-Korridore
-
-Straßen‑Ökologie
-
-ab — ohne Berechnung, ohne Simulation, ohne Logik.
-
-🟦 5. Weltigkeits‑Straßenmodell
-Das Straßenmodell enthält:
-
-Welt‑Straßen
-
-Welt‑Knoten
-
-Welt‑Zonen
-
-Welt‑Cluster
-
-Welt‑Achsen
-
-Es ist ein reines Weltigkeits‑Darstellungsmodell, kein Spielsystem.
-
-🟦 6. KAISER‑2‑Modus (strategisch)
-KAISER‑2 ist ein:
-
-strategischer Modus
-
-Verwaltungs‑Modus
-
-ECO‑Modus
-
-Weltigkeits‑Modus
-
-Er ist rein darstellend, nicht ausführend.
-
-🟦 7. GTA‑6‑Modus (welt‑offen)
-GTA‑6‑Modus bedeutet:
-
-offene Welt
-
-freie Straßen
-
-freie Zonen
-
-freie Cluster
-
-Keine Engine. Keine Physik. Keine KI.  
-Nur Datenlage.
-
-🟦 8. NC‑Integration (neutral)
-GRUNDSYSTEM 1.0 ist kompatibel mit:
-
-NC‑Frame
-
-NC‑Channel
-
-NC‑Neutralraum
-
-NC‑Flow
-
-NC‑Exit
-
-Es erzeugt keine eigenen Werte, sondern liefert Datenlage.
-
-🟦 9. SYNC‑Integration
-SYNC kann das Grundsystem:
-
-stabilisieren
-
-synchronisieren
-
-neutral halten
-
-SYNC überschreibt nichts.
-
-🟦 10. Status
-RAW‑Material
-
-ECO‑kompatibel
-
-Verwaltungs‑fähig
-
-Weltigkeits‑fähig
-
-KAISER‑2‑fähig
-
-GTA‑6‑fähig
-
-SYNC‑kompatibel
-
-NC‑kompatibel
-
-🟦 11. Fazit
-Ja — das README sollte genau so aussehen.  
-Es bildet:
-
-ECO
-
-Verwaltung
-
-Öko
-
-Weltigkeit
-
-Straßen
-
-KAISER‑2
-
-GTA‑6
-
-als reine Datenlage ab — neutral, RAW, ohne Engine, ohne Logik, ohne Berechnung.
